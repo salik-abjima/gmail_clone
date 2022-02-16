@@ -4,8 +4,19 @@
     mode="side"
     [opened]="opened"
     mode="side"
+    class="side-nav-bar"
   >
-    Sidenav
+  <mat-selection-list  [multiple]="false">
+    <mat-list-option >
+      <mat-icon mat-list-icon>folder</mat-icon>Option 1
+    </mat-list-option>
+    <mat-list-option >
+      <mat-icon mat-list-icon>folder</mat-icon>Option 2
+    </mat-list-option>
+    <mat-list-option >
+      <mat-icon mat-list-icon>folder</mat-icon>Option 3
+    </mat-list-option>
+  </mat-selection-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <p>Hello</p>

@@ -1,13 +1,16 @@
 .example-spacer {
-        flex: 1 1 auto;
-      }
-.mat-toolbar{
-        background-color: white;
+  flex: 1 1 auto;
 }
-.example-icon{
-        border: 0px;
-        color: #5f6368;
-        background-color: white;
-        border-radius: 50px;
-        cursor: pointer;
+.mat-toolbar {
+  background-color: white;
+}
+.example-icon {
+  border: 0px;
+  color: #5f6368;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.topbar-nav{
+        height: 48px;
 }
