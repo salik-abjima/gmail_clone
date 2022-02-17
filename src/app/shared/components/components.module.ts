@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatRippleModule} from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [],
   imports: [
@@ -17,7 +18,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatRippleModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ],
   exports:[
     MatSidenavModule,
@@ -26,7 +28,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatRippleModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatInputModule
   ]
 })
 export class ComponentsModule { }

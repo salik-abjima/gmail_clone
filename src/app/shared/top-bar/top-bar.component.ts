@@ -8,6 +8,7 @@ import { SidebarService } from '../Services/sidebar.service';
 })
 export class TopBarComponent implements OnInit {
   radius!: number;
+  searchInput:string=''
   constructor(private sideBar:SidebarService) { }
 
   ngOnInit(): void {

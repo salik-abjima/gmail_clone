@@ -1,23 +1,30 @@
-<div>
-  <mat-toolbar class="topbar-nav">
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon
+      class="mat-icon"
+      matRipple
+      [matRippleCentered]="true"
+      [matRippleUnbounded]="true"
+      [matRippleRadius]="radius"
+      (click)="toggleSidebar()"
+      >menu</mat-icon
     >
-      <mat-icon
-        class="mat-icon"
-        matRipple
-        [matRippleCentered]="true"
-        [matRippleUnbounded]="true"
-        [matRippleRadius]="radius"
-        (click)="toggleSidebar()"
-        >menu</mat-icon
-      >
-    </button>
-    <button mat-icon-button class="example-icon" >
-            <img class="logo-gmail" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
-    </button>
-    <!-- <span class="example-spacer"></span> -->
-  </mat-toolbar>
-</div>
+  </button>
+  <button mat-icon-button class="example-icon" >
+          <img class="logo-gmail" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
+  </button>
+  <div class="example-form-div">
+    <mat-form-field class="example-form-field" appearance="fill">
+      <span><mat-icon>search</mat-icon></span>
+      <input matInput type="text" [(ngModel)]="searchInput">
+      <button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Clear" (click)="searchInput=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <!-- <span class="example-spacer"></span> -->
+</mat-toolbar>
