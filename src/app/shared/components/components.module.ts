@@ -8,6 +8,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [],
   imports: [
@@ -19,7 +20,8 @@ import {MatInputModule} from '@angular/material/input';
     MatRippleModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   exports:[
     MatSidenavModule,
@@ -29,7 +31,8 @@ import {MatInputModule} from '@angular/material/input';
     MatRippleModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ]
 })
 export class ComponentsModule { }

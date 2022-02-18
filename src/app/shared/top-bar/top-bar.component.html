@@ -1,30 +1,66 @@
 <mat-toolbar>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon
-      class="mat-icon"
-      matRipple
+  <span class="gmail-logo">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon
+        class="mat-icon"
+        matRipple
+        [matRippleCentered]="true"
+        [matRippleUnbounded]="true"
+        [matRippleRadius]="radius"
+        (click)="toggleSidebar()"
+        >menu</mat-icon
+      >
+    </button>
+    <button mat-icon-button class="example-icon" >
+            <img class="logo-gmail" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
+    </button>
+  </span>
+  <span class="example-form-span">
+    <div class="search-wrapper">
+      <div class="input-icons">
+        <mat-icon>search</mat-icon>
+      <!-- </i> -->
+        <input class="input-field" 
+               type="text" 
+               placeholder="Username">
+    </div>    </div>
+    <div class="settings-wrapper">
+      <div class="icons-div">
+        <mat-icon matRipple
+        [matRippleCentered]="true"
+        [matRippleUnbounded]="true"
+        [matRippleRadius]="radius">help_outline</mat-icon>
+      </div>
+      <div class="icons-div">
+        <mat-icon matRipple
+        [matRippleCentered]="true"
+        [matRippleUnbounded]="true"
+        [matRippleRadius]="radius">settings</mat-icon>
+
+      </div>
+    </div>
+  </span>
+  <div class="menu-right">
+    <div class="icons-div">
+      <mat-icon matRipple
       [matRippleCentered]="true"
       [matRippleUnbounded]="true"
-      [matRippleRadius]="radius"
-      (click)="toggleSidebar()"
-      >menu</mat-icon
-    >
-  </button>
-  <button mat-icon-button class="example-icon" >
-          <img class="logo-gmail" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="">
-  </button>
-  <div class="example-form-div">
-    <mat-form-field class="example-form-field" appearance="fill">
-      <span><mat-icon>search</mat-icon></span>
-      <input matInput type="text" [(ngModel)]="searchInput">
-      <button *ngIf="searchInput" matSuffix mat-icon-button aria-label="Clear" (click)="searchInput=''">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
+      [matRippleRadius]="radius">apps</mat-icon>
+
+    </div>
+    <div class="icons-div" id="account-circle">
+      <mat-icon matRipple
+      [matRippleCentered]="true"
+      [matRippleUnbounded]="true"
+      [matRippleRadius]="radius">account_circle</mat-icon>
+
+    </div>
   </div>
+  
   <!-- <span class="example-spacer"></span> -->
 </mat-toolbar>
+<mat-divider></mat-divider>
