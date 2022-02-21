@@ -20,7 +20,7 @@
   width: 100%;
   height: 80px;
   padding: 0 0 0 8px;
-  background-color: whitesmoke;
+  background-color: white;
   .compose-button{
     width: 60%;
     margin: 16px 0px;
@@ -28,4 +28,10 @@
     border-radius: 50px;
     padding: 0 24px 0 0;
   }
+}
+#sidenav.menuopen{
+  width: 16.8%;
+}
+#sidenav.menuclose{
+  width: 4.75%;
 }
