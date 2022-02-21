@@ -2,9 +2,11 @@
   <mat-sidenav
     #sidenav
     mode="side"
-    [opened]="opened"
-    mode="side"
     class="side-nav-bar"
+    opened
+    id="sidenav"
+    [class.menuopen]="opened"
+    [class.menuclose]="!opened"
   >
   <div class="compose-button-wrapper">
     <button mat-icon-button mat-raised-button class="compose-button">
@@ -26,7 +28,8 @@
     </mat-list-option>
   </mat-selection-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content 
+  [ngStyle]="{'margin-left': contentMargin + '%'}">
     <p>Hello</p>
   </mat-sidenav-content>
 </mat-sidenav-container>

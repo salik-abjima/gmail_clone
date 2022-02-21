@@ -5,7 +5,7 @@ import { BehaviorSubject, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class SidebarService {
-  navOpen:boolean=false;
+  navOpen:boolean=true;
   open:BehaviorSubject<boolean>=new BehaviorSubject<boolean>(this.navOpen);
   public isOpen=this.open.asObservable();
   constructor() { }

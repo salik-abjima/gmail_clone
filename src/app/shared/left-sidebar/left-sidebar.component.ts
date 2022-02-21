@@ -9,15 +9,24 @@ import { SidebarService } from '../Services/sidebar.service';
 export class LeftSidebarComponent implements OnInit {
   events: string[] = [];
   opened!:boolean;
-
-  constructor(private sidebar:SidebarService) { }
-
-  ngOnInit(): void {
+  contentMargin:number=16.8
+  constructor(private sidebar:SidebarService) {
     this.sidebar.isOpen.subscribe(
       (res:boolean)=>{
         this.opened=res;
+        console.log(this.opened)
+        if(!this.opened){
+          this.contentMargin=7.6
+        }
+        else{
+          this.contentMargin=16.8
+        }
       }
     )
+   }
+
+  ngOnInit(): void {
+   
   }
 
 }
