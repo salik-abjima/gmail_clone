@@ -31,7 +31,33 @@
 }
 #sidenav.menuopen{
   width: 16.8%;
+  // .mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon{
+  //   margin-left: 10px;
+  //   font-size: 20px;
+  // }
+
 }
 #sidenav.menuclose{
   width: 4.75%;
+  .mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon{
+    font-size: 20px;
+    margin-left: 38px;
+  }
+  .mat-list-base .mat-list-item.mat-list-item-with-avatar.mat-list-option .mat-list-item-content-reverse .mat-list-text, .mat-list-base .mat-list-item.mat-list-item-with-avatar.mat-list-option .mat-list-item-content .mat-list-text, .mat-list-base .mat-list-option.mat-list-item-with-avatar.mat-list-option .mat-list-item-content-reverse .mat-list-text, .mat-list-base .mat-list-option.mat-list-item-with-avatar.mat-list-option .mat-list-item-content .mat-list-text{
+    display: none;
+  }
+}
+
+
+.mat-list-option-select{
+  .mat-list-option{
+    .mat-list-item-content{
+      padding: 0 12px 0 26px !important;
+      background-color: blue!important;
+    }
+  }
+}
+.mat-list-base .mat-list-item.mat-list-item-with-avatar, .mat-list-base .mat-list-option.mat-list-item-with-avatar{
+  padding: 0 12px 0 10px;
+
 }

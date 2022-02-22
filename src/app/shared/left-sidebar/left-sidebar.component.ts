@@ -16,7 +16,7 @@ export class LeftSidebarComponent implements OnInit {
         this.opened=res;
         console.log(this.opened)
         if(!this.opened){
-          this.contentMargin=7.6
+          this.contentMargin=4.75
         }
         else{
           this.contentMargin=16.8
